@@ -1,0 +1,385 @@
+﻿{
+    "info":  {
+                 "name":  "Fimory BE Main APIs",
+                 "_postman_id":  "64ed8fb7-46eb-4c60-bd88-fcb153d1fe8f",
+                 "schema":  "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+             },
+    "item":  [
+                 {
+                     "name":  "admin-movies",
+                     "item":  {
+                                  "name":  "POST /admin/movies/:movieId/episodes",
+                                  "request":  {
+                                                  "method":  "POST",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/admin/movies/:movieId/episodes",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "admin",
+                                                                           "movies",
+                                                                           ":movieId",
+                                                                           "episodes"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "admin-stories",
+                     "item":  {
+                                  "name":  "PUT /admin/chapters/:chapterId",
+                                  "request":  {
+                                                  "method":  "PUT",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/admin/chapters/:chapterId",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "admin",
+                                                                           "chapters",
+                                                                           ":chapterId"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "auth",
+                     "item":  {
+                                  "name":  "GET /me",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/me",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "me"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "categories",
+                     "item":  {
+                                  "name":  "PUT /admin/categories/:id",
+                                  "request":  {
+                                                  "method":  "PUT",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/admin/categories/:id",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "admin",
+                                                                           "categories",
+                                                                           ":id"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "comments",
+                     "item":  {
+                                  "name":  "GET /admin/comments/series",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/admin/comments/series",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "admin",
+                                                                           "comments",
+                                                                           "series"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "history",
+                     "item":  {
+                                  "name":  "GET /history/series",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/history/series",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "history",
+                                                                           "series"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "movies",
+                     "item":  {
+                                  "name":  "GET /movies/:slug/episodes",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/movies/:slug/episodes",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "movies",
+                                                                           ":slug",
+                                                                           "episodes"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "notifications",
+                     "item":  {
+                                  "name":  "GET /notifications/count",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/notifications/count",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "notifications",
+                                                                           "count"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "ratings",
+                     "item":  {
+                                  "name":  "POST /stories/:id/rating",
+                                  "request":  {
+                                                  "method":  "POST",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/stories/:id/rating",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "stories",
+                                                                           ":id",
+                                                                           "rating"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "socket",
+                     "item":  {
+                                  "name":  "GET /socket/health",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/socket/health",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "socket",
+                                                                           "health"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "stories",
+                     "item":  {
+                                  "name":  "POST /stories/:seriesId/chapters",
+                                  "request":  {
+                                                  "method":  "POST",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/stories/:seriesId/chapters",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "stories",
+                                                                           ":seriesId",
+                                                                           "chapters"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "system",
+                     "item":  {
+                                  "name":  "GET /system/modules",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/system/modules",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "system",
+                                                                           "modules"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "transactions",
+                     "item":  {
+                                  "name":  "PUT /transactions/:id",
+                                  "request":  {
+                                                  "method":  "PUT",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/transactions/:id",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "transactions",
+                                                                           ":id"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 },
+                 {
+                     "name":  "users",
+                     "item":  {
+                                  "name":  "GET /roles",
+                                  "request":  {
+                                                  "method":  "GET",
+                                                  "header":  [
+
+                                                             ],
+                                                  "url":  {
+                                                              "raw":  "{{base_url}}/api/roles",
+                                                              "host":  [
+                                                                           "{{base_url}}"
+                                                                       ],
+                                                              "path":  [
+                                                                           "api",
+                                                                           "roles"
+                                                                       ]
+                                                          }
+                                              },
+                                  "response":  [
+
+                                               ]
+                              }
+                 }
+             ],
+    "variable":  [
+                     {
+                         "key":  "base_url",
+                         "value":  "http://localhost:4000"
+                     }
+                 ]
+}
