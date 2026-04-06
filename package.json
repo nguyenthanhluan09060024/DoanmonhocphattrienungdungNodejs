@@ -1,0 +1,12 @@
+{
+  "name": "webfimoryc4-workspace",
+  "private": true,
+  "scripts": {
+    "dev:fe": "npm --prefix FE run dev",
+    "dev:be": "npm --prefix BE run dev",
+    "dev:all": "npm --prefix FE run dev:all",
+    "build:fe": "npm --prefix FE run build",
+    "build:be": "npm --prefix BE run build",
+    "build": "npm run build:be && npm run build:fe"
+  }
+}
