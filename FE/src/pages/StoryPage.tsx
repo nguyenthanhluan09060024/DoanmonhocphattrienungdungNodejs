@@ -53,20 +53,24 @@ interface Story {
 
 const repairVietnameseText = (value?: string | null) => {
   if (!value) return "";
-  const source = String(value).replace(/\u0000/g, "").trim();
+  const source = String(value).replace(/\0/g, "").trim();
   if (!source) return "";
 
   const variants: string[] = [source];
 
   try {
     const bytes = Uint8Array.from(source, (char) => char.charCodeAt(0) & 0xff);
-    variants.push(new TextDecoder("utf-8").decode(bytes).replace(/\u0000/g, "").trim());
-  } catch {}
+    variants.push(new TextDecoder("utf-8").decode(bytes).replace(/\0/g, "").trim());
+  } catch {
+    // eslint-disable-next-line no-empty
+  }
 
   try {
     // Browser legacy trick for "UTF-8 read as Latin-1" strings
-    variants.push(decodeURIComponent(escape(source)).replace(/\u0000/g, "").trim());
-  } catch {}
+    variants.push(decodeURIComponent(escape(source)).replace(/\0/g, "").trim());
+  } catch {
+    // eslint-disable-next-line no-empty
+  }
 
   const score = (text: string) => {
     if (!text) return Number.MAX_SAFE_INTEGER;
