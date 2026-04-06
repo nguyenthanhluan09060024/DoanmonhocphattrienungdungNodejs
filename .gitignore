@@ -1,0 +1,6 @@
+FE/node_modules
+FE/dist
+BE/node_modules
+BE/dist
+BE/uploads/*.mp4
+*.log
