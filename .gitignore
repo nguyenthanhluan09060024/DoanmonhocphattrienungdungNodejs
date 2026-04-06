@@ -4,4 +4,8 @@ BE/node_modules
 BE/dist
 BE/uploads/*.mp4
 *.log
+<<<<<<< HEAD
 BE/Uploads
+=======
+BE/uploads
+>>>>>>> b751718505e4e9441ee3230b6559be702e5b4045
