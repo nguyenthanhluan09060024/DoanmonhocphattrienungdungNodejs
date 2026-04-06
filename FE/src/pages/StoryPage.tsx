@@ -62,15 +62,17 @@ const repairVietnameseText = (value?: string | null) => {
     const bytes = Uint8Array.from(source, (char) => char.charCodeAt(0) & 0xff);
     variants.push(new TextDecoder("utf-8").decode(bytes).replace(/\0/g, "").trim());
   } catch {
-    // eslint-disable-next-line no-empty
+    // Silently ignore UTF-8 decode failures
   }
+
 
   try {
     // Browser legacy trick for "UTF-8 read as Latin-1" strings
     variants.push(decodeURIComponent(escape(source)).replace(/\0/g, "").trim());
   } catch {
-    // eslint-disable-next-line no-empty
+    // Silently ignore legacy decode failures
   }
+
 
   const score = (text: string) => {
     if (!text) return Number.MAX_SAFE_INTEGER;
